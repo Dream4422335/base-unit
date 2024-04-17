@@ -1,0 +1,163 @@
+[
+  [  
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/เคลวิน1.png",
+      "answers": ["เคลวิน (correct)", "กิโลกรัม", "โมล", "วินาที"],
+      "explanation": "เคลวินเป็นหน่วยฐานของอุณหภูมิอุณหพลวัต"
+    },
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/เคลวิน2.png",
+      "answers": ["แคนเดลา", "เมตร", "วินาที", "เคลวิน (correct)"],
+      "explanation": "เคลวินเป็นหน่วยฐานของอุณหภูมิอุณหพลวัต"
+    },
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/เคลวิน3.png",
+      "answers": ["กิโลกรัม", "เมตร", "เคลวิน (correct)", "แอมแปร์"],
+      "explanation": "เคลวินเป็นหน่วยฐานของอุณหภูมิอุณหพลวัต"
+    }
+  ],
+  [
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/โมล1.png",
+      "answers": ["เมตร", "เคลวิน", "วินาที", "โมล (correct)"],
+      "explanation": "โมลเป็นหน่วยฐานของปริมาณของสาร"
+    },
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/โมล2.png",
+      "answers": ["กิโลกรัม", "วินาที", "แอมแปร์", "โมล (correct)"],
+      "explanation": "โมลเป็นหน่วยฐานของปริมาณของสาร"
+    },
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/โมล3.png",
+      "answers": ["เมตร", "แคนเดลา", "เคลวิน", "โมล (correct)"],
+      "explanation": "โมลเป็นหน่วยฐานของปริมาณของสาร"
+    }
+  ],
+  [
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/แคนเดลา1.png",
+      "answers": ["เมตร", "โมล", "แอมแปร์", "แคนเดลา (correct)"],
+      "explanation": "แคนเดลาเป็นหน่วยฐานของความเข้มของการส่องสว่าง"
+    },
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/แคนเดลา2.png",
+      "answers": ["วินาที", "แอมแปร์", "กิโลกรัม", "แคนเดลา (correct)"],
+      "explanation": "แคนเดลาเป็นหน่วยฐานของความเข้มของการส่องสว่าง"
+    },
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/แคนเดลา3.png",
+      "answers": ["กิโลกรัม", "เมตร", "เคลวิน", "แคนเดลา (correct)"],
+      "explanation": "แคนเดลาเป็นหน่วยฐานของความเข้มของการส่องสว่าง"
+    }
+  ],
+  [
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/วินาที1.png",
+      "answers": ["โมล", "เมตร", "แอมแปร์", "วินาที (correct)"],
+      "explanation": "วินาทีเป็นหน่วยฐานของเวลา"
+    },
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/วินาที2.png",
+      "answers": ["แคนเดลา", "เมตร", "โมล", "วินาที (correct)"],
+      "explanation": "วินาทีเป็นหน่วยฐานของเวลา"
+    },
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/วินาที3.png",
+      "answers": ["แอมแปร์", "กิโลกรัม", "เคลวิน", "วินาที (correct)"],
+      "explanation": "วินาทีเป็นหน่วยฐานของเวลา"
+    }
+  ],
+  [
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/เมตร1.png",
+      "answers": ["กิโลกรัม", "วินาที", "แอมแปร์", "เมตร (correct)"],
+      "explanation": "เมตรเป็นหน่วยฐานของความยาว"
+    },
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/เมตร2.png",
+      "answers": ["โมล", "แอมแปร์", "เคลวิน", "เมตร (correct)"],
+      "explanation": "เมตรเป็นหน่วยฐานของความยาว"
+    },
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/เมตร3.png",
+      "answers": ["วินาที", "กิโลกรัม", "แคนเดลา", "เมตร (correct)"],
+      "explanation": "เมตรเป็นหน่วยฐานของความยาว"
+    }
+  ],
+  [
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/กิโลกรัม1.png",
+      "answers": ["เมตร", "วินาที", "แอมแปร์", "กิโลกรัม (correct)"],
+      "explanation": "กิโลกรัมเป็นหน่วยฐานของมวล"
+    },
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/กิโลกรัม2.png",
+      "answers": ["แคนเดลา", "เมตร", "โมล", "กิโลกรัม (correct)"],
+      "explanation": "กิโลกรัมเป็นหน่วยฐานของมวล"
+    },
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/กิโลกรัม3.png",
+      "answers": ["แอมแปร์", "เคลวิน", "วินาที", "กิโลกรัม (correct)"],
+      "explanation": "กิโลกรัมเป็นหน่วยฐานของมวล"
+    }
+  ],
+  [
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/แอมแปร์1.png",
+      "answers": ["เมตร", "วินาที", "โมล", "แอมแปร์ (correct)"],
+      "explanation": "แอมแปร์เป็นหน่วยฐานของกระแสไฟฟ้า"
+    },
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/แอมแปร์2.png",
+      "answers": ["มะม่วง", "เคลวิน", "แคนเดลา", "แอมแปร์ (correct)"],
+      "explanation": "แอมแปร์เป็นหน่วยฐานของกระแสไฟฟ้า"
+    },
+    {
+      
+      "question": "นี่คืออะไร",
+      "questionImage": "./questionImages/แอมแปร์3.png",
+      "answers": ["กิโลกรัม", "เมตร", "วินาที", "แอมแปร์ (correct)"],
+      "explanation": "แอมแปร์เป็นหน่วยฐานของกระแสไฟฟ้า"
+    }
+  ]
+]
