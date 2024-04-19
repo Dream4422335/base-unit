@@ -1,6 +1,10 @@
+@font-face {
+  font-family: KN;
+  src: url(./FontsKhawNeaw/KhaoNiawThin.ttf);
+}
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('./Menu_background.webp');
+    font-family: KN; 
+    background-image: url('./Menu_background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #fff; 
+    color: #000000; 
   }
   .question-container {
     text-align: center;
@@ -19,37 +23,61 @@ body {
   .answer {
     display: block;
     margin: 10px auto; 
-    padding: 15px;
+    padding: 15px; 
     border-radius: 5px;
     cursor: pointer;
-    background-color: DodgerBlue;
+    background-image: url("./เกมทายคำกำไร.png");
+    background-color: #EFD493;
+    background-position: center;
+    background-size: cover; 
+    height: 3.6em;
+    width: 78%;
+    border-radius: 15px;
   }
-
+  .answerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 15px;
+  }
   .correct-displayed {
     background-color: #8BC34A;
   }
   .wrong-displayed {
     background-color: #FF5722; 
   }
+
   .explanation {
-    font-style: italic;
-    margin-top: 10px;
+    margin-top: 35%;
     display: none;
     width: fit-content;
-    margin: 0 1em;
-  }
+    margin: 0 auto; 
+    font-size: 16px; 
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    left: 0; 
+    right: 0; 
+    text-align: center;
+}
+
   .question-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
     margin-bottom: 20px;
-  }
+}
 
   .nextbutton {
+    position: fixed;
+    bottom: 2em; 
+    right: 1em;
     display: none;
-    margin: 0 1em;
-    padding: 0.2em; 
-    border-radius: 5px;
+    padding: 0.5em 1em; 
+    border-radius: 10px; 
     cursor: pointer;
-    background-color: rgb(175, 162, 246);
+    background-color: rgb(162, 246, 168);
     border: none;
-  }
+}  
