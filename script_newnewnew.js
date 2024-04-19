@@ -5,10 +5,6 @@ function displayQuestion(questionObj) {
     var questionDiv = document.createElement("div");
     questionDiv.classList.add("question-container");
     
-    var questionHeader = document.createElement("h2");
-    questionHeader.textContent = "Question " + (currentQuestionIndex + 1) + ": " + questionObj.question;
-    questionDiv.appendChild(questionHeader);
-    
     var questionImage = document.createElement("img");
     questionImage.src = questionObj.questionImage;
     questionImage.classList.add("question-image");
@@ -23,7 +19,7 @@ function displayQuestion(questionObj) {
         } else {
             answerDiv.classList.add("wrong");
         }
-        answerDiv.textContent = answer.replace(" (correct)", "");
+        answerDiv.innerHTML = `<div class="answerText">${answer.replace(" (correct)", "")}</div>`;
         questionDiv.appendChild(answerDiv);
     });
     
@@ -52,43 +48,41 @@ function nextQuestionPlease() {
 }
 
 function userAnsweredCorrectly() {
-
-    document.querySelector(".explanation").style.display = "inline-block"
-
-  
-    document.querySelector(".nextbutton").style.display = "inline-block"
-
+    document.querySelector(".explanation").style.display = "inline-block";
+    document.querySelector(".nextbutton").style.display = "inline-block";
+    document.querySelectorAll(".answer").forEach(function(answer) {
+        answer.classList.add("disabled");
+    });
 }
+
 async function doSomething() {
-    const response = await fetch("questions_v1.json")
-    const allQuestions = await response.json()
+    const response = await fetch("questions_v1.json");
+    const allQuestions = await response.json();
   
-    console.log(chosenQuestions)
-    
     for (let questionSet of allQuestions) {
-        var selectedQuestion = questionSet.sort(() => Math.random() - 0.5)[0]
-        chosenQuestions.push(selectedQuestion)
+        var selectedQuestion = questionSet.sort(() => Math.random() - 0.5)[0];
+        chosenQuestions.push(selectedQuestion);
     }
     chosenQuestions.sort(() => Math.random() - 0.5);
-    
     
     displayQuestion(chosenQuestions[currentQuestionIndex]);
     
     document.addEventListener("click", function(event) {
-        bc = event.target.classList
-        if (bc.contains("answer")) {
-            if (bc.contains("correct")) {
-                bc.add("correct-displayed")
-                userAnsweredCorrectly()
-                
+        let target = event.target;
+        if (target.classList.contains("answerText")) {
+            target = target.parentElement;
+        }
+        if (target.classList.contains("answer") && !target.classList.contains("disabled")) {
+            if (target.classList.contains("correct")) {
+                target.classList.add("correct-displayed");
+                userAnsweredCorrectly();
+            } else if (target.classList.contains("wrong")) {
+                target.classList.add("wrong-displayed");
+            } else {
+                alert('YAYYYY! SOMETHING WENT WRONG.');
             }
-            else if (bc.contains("wrong")) {
-                bc.add("wrong-displayed")
-            }
-            else {
-                alert('YAYYYY! SOMETHING WENT WRONG.')
-            }
-            
-        }});
-    }
-    doSomething()
+        }
+    });
+}
+
+doSomething();
